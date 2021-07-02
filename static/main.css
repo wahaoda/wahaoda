@@ -1201,19 +1201,8 @@
 			-ms-transition: opacity 0.325s ease-in-out;
 			transition: opacity 0.325s ease-in-out;
 			position: relative;
-			margin-top: 3.5rem;
+			margin-top: 2.5rem;
 		}
-
-			#header > *:before {
-				content: '';
-				display: block;
-				position: absolute;
-				top: calc(-3.5rem - 1px);
-				left: calc(50% - 1px);
-				width: 1px;
-				height: calc(3.5rem + 1px);
-				background: #ffffff;
-			}
 
 		#header > :first-child {
 			margin-top: 0;
@@ -1227,8 +1216,14 @@
 			width: 5.5rem;
 			height: 5.5rem;
 			line-height: 5.5rem;
-			border: solid 1px #ffffff;
-			border-radius: 100%;
+			background-image: url('./logo.png');
+			/*border: solid 1px #ffffff;*/
+			/*border-radius: 100%;*/
+		}
+
+		#header .header-logo {
+			width:400px;
+			height:150px; 
 		}
 
 			#header .logo .icon:before {
@@ -1239,8 +1234,9 @@
 			border-style: solid;
 			border-color: #ffffff;
 			/*border-top-width: 1px;*/
-			border-bottom-width: 1px;
+			/*border-bottom-width: 1px;*/
 			max-width: 100%;
+			margin-top: 0px;
 		}
 
 			#header .content .inner {
@@ -1368,6 +1364,10 @@
 				margin-top: 2rem;
 			}
 
+			#header .header-logo {
+				width:250px;
+				height:100px; 
+			}
 				#header > *:before {
 					top: calc(-2rem - 1px);
 					height: calc(2rem + 1px);
